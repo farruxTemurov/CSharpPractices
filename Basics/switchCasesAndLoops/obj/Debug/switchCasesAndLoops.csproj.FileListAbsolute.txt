@@ -1,0 +1,7 @@
+C:\Vistula University\Intro to Programming\Lab Practices\C#  practices\Basics\switchCasesAndLoops\bin\Debug\switchCasesAndLoops.exe.config
+C:\Vistula University\Intro to Programming\Lab Practices\C#  practices\Basics\switchCasesAndLoops\bin\Debug\switchCasesAndLoops.exe
+C:\Vistula University\Intro to Programming\Lab Practices\C#  practices\Basics\switchCasesAndLoops\bin\Debug\switchCasesAndLoops.pdb
+C:\Vistula University\Intro to Programming\Lab Practices\C#  practices\Basics\switchCasesAndLoops\obj\Debug\switchCasesAndLoops.csproj.AssemblyReference.cache
+C:\Vistula University\Intro to Programming\Lab Practices\C#  practices\Basics\switchCasesAndLoops\obj\Debug\switchCasesAndLoops.csproj.CoreCompileInputs.cache
+C:\Vistula University\Intro to Programming\Lab Practices\C#  practices\Basics\switchCasesAndLoops\obj\Debug\switchCasesAndLoops.exe
+C:\Vistula University\Intro to Programming\Lab Practices\C#  practices\Basics\switchCasesAndLoops\obj\Debug\switchCasesAndLoops.pdb

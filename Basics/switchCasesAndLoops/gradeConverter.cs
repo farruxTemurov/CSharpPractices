@@ -11,23 +11,23 @@ namespace switchCasesAndLoops
         public void PrintGrades()
         {
             double polishGrade;
-            char usaGrade;
+            String usaGrade;
             Console.Write("Enter your polish grade: ");
             polishGrade = Convert.ToDouble(Console.ReadLine());
 
             switch (polishGrade)
             {
-                case 5: usaGrade = 'A'; break;
-                case 4.5: usaGrade = 'B'; break;
-                case 4: usaGrade = 'C'; break;
-                case 3.5: usaGrade = 'D'; break;
-                case 3: usaGrade = 'E'; break;
-                case 2: usaGrade = 'F'; break;
-                default: usaGrade = '0'; break;
+                case 5: usaGrade = "A"; break;
+                case 4.5: usaGrade = "B+"; break;
+                case 4: usaGrade = "B"; break;
+                case 3.5: usaGrade = "C+"; break;
+                case 3: usaGrade = "C"; break;
+                case 2: usaGrade = "F"; break;
+                default: usaGrade = "Invalid grade"; break;
             }
-            if (usaGrade == '0')
+            if (usaGrade == "Invalid grade")
             {
-                Console.WriteLine("Your entered wrong value, plz try again!");
+                Console.WriteLine("Your entered wrong value, please try again!");
             }
             else
             {

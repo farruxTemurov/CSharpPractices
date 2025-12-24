@@ -10,8 +10,10 @@ namespace ComparisonOperators
     {
         static void Main(string[] args)
         {
-            IntegerAndFloat inf = new IntegerAndFloat();
-            inf.ReadTwoVals();
+            /*IntegerAndFloat inf = new IntegerAndFloat();
+            inf.ReadTwoVals();*/
+            CharAndString chs = new CharAndString();
+            chs.ReverseLetters();
         }
     }
 }

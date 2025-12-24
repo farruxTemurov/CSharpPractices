@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CharAndString.cs" />
+    <Compile Include="StringAndInt.cs" />
     <Compile Include="IntegerAndFloat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

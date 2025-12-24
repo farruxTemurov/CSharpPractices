@@ -11,9 +11,11 @@ namespace ComparisonOperators
         static void Main(string[] args)
         {
             /*IntegerAndFloat inf = new IntegerAndFloat();
-            inf.ReadTwoVals();*/
+            inf.ReadTwoVals();
             CharAndString chs = new CharAndString();
-            chs.ReverseLetters();
+            chs.ReverseLetters();*/
+            StringAndInt si = new StringAndInt();
+            si.CalculateAge();
         }
     }
 }

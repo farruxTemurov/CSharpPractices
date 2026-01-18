@@ -34,7 +34,20 @@ namespace Methods
             return sum;
         }
 
-        static
+        static int findFactorial(int n)
+        {
+            int f = 1;
+            for (int i = n; i >= 1; i--)
+            {
+                f *= i;
+            }
+            return f;
+        }
+
+        static int FindCombination(int n, int r)
+        {
+            return findFactorial(n) / (findFactorial(r) * findFactorial(n - r));
+        }
 
         static void Menu()
         {
@@ -52,7 +65,18 @@ namespace Methods
                 {
                     case 1:
                         int result = Add();
+
                         Console.WriteLine($"sum = {result}");
+                        break;
+                    case 2:
+                        int r, n;
+                        Console.Write("Enter the r value: ");
+                        r = int.Parse(Console.ReadLine());
+
+                        Console.Write("Enter the n value: ");
+                        n = int.Parse(Console.ReadLine());
+                        int comb = FindCombination(n, r);
+                        Console.WriteLine("result is: " + comb);
                         break;
                     default: Console.WriteLine("Wrong choice!"); break;
                 }

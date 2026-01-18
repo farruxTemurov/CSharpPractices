@@ -25,7 +25,13 @@ namespace switchCasesAndLoops
                 switch (choice)
                 {
                     case 1: gc.PrintGrades(); break;
-                    case 2: f.findFactorialN(); break;
+                    case 2:
+                        Console.Write("Enter n: ");
+                        int n = int.Parse(Console.ReadLine());
+
+                        int result = f.Calculate(n);
+                        Console.WriteLine($"Factorial = {result}");
+                        break;
                     default: Console.WriteLine("Wrong choice!"); break;
                 }
                 Console.WriteLine("Do you want to continue?(y/n)");

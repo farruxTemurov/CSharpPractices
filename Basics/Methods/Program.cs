@@ -22,6 +22,12 @@ namespace Methods
 
                 if (input.ToLower() == "x") break;
 
+                if (!int.TryParse(input, out int number))
+                {
+                    Console.WriteLine("Wrong input, please enter an integer");
+                    continue;
+                }
+
                 arr.Add(int.Parse(input));
             }
 

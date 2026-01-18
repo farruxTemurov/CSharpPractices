@@ -88,8 +88,10 @@ namespace Methods
                 }
                 Console.WriteLine("Do you want to continue?(y/n)");
                 con = Console.ReadLine();
-            } while (con.Equals("y"));
+            } while (con.Equals("y", StringComparison.OrdinalIgnoreCase));
             Console.WriteLine("Thanks for your visit!");
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
         }
         static void Main(string[] args)
         {

@@ -100,13 +100,41 @@ namespace Methods
             a = b;
             b = temp;
         }
+
+        static bool IsPrime(int n)
+        {
+            if (n <= 1)
+            {
+                return false;
+            }
+
+            for (int i = 2; i*i <=n; i++) // instead of i * i <=n could be i < n -1, with the former being more efficient
+            {
+                if (n % i == 0)
+                    return false;
+            }
+            return true;
+
+        }
+
         static void Main(string[] args)
         {
-            //Menu();
+            /*Menu();
             int x = 5, y = 10;
             Console.WriteLine($"Before swap: x = {x}, y = {y}");
             Swap(ref x, ref y);
             Console.WriteLine($"After swap: x = {x}, y = {y}");
+            */
+            Console.Write("Enter a number: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            if (IsPrime(n))
+            {
+                Console.WriteLine("Prime number");
+            }
+            else
+            {
+                Console.WriteLine("Not A Prime number");
+            }
             Console.ReadKey();
         }
     }

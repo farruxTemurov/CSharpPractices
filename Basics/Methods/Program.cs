@@ -93,9 +93,21 @@ namespace Methods
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
+
+        static void Swap(ref int a, ref int b)
+        {
+            int temp = a;
+            a = b;
+            b = temp;
+        }
         static void Main(string[] args)
         {
-            Menu();
+            //Menu();
+            int x = 5, y = 10;
+            Console.WriteLine($"Before swap: x = {x}, y = {y}");
+            Swap(ref x, ref y);
+            Console.WriteLine($"After swap: x = {x}, y = {y}");
+            Console.ReadKey();
         }
     }
 }

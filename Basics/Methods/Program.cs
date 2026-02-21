@@ -94,7 +94,7 @@ namespace Methods
             Console.ReadKey();
         }
 
-        static void Swap(ref int a, ref int b)
+        static void Swap(ref int a, ref int b) // ref -> references x and y and when i change a, x will change as well.
         {
             int temp = a;
             a = b;

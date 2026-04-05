@@ -59,7 +59,22 @@ namespace PriceCalculatorApp
 
         private void btnCart_Click(object sender, EventArgs e)
         {
+            lbCartItems.Items.Clear();
             FileStream fs = new FileStream("ProductInfo.txt", FileMode.Open, FileAccess.Read);
+
+            StreamReader sr = new StreamReader(fs);
+
+            while (!sr.EndOfStream)
+            {
+                string[] splitInfo = sr.ReadLine().Split(';');
+
+
+                lbCartItems.Items.Add($"{splitInfo[0]}: {splitInfo[3]} PLN");
+            }
+
+            sr.Close();
+            fs.Close();
+
         }
     }
 }

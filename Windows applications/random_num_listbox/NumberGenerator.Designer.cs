@@ -43,7 +43,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(325, 27);
+            this.label1.Location = new System.Drawing.Point(237, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(223, 53);
             this.label1.TabIndex = 0;
@@ -150,6 +150,7 @@
             this.Controls.Add(this.label1);
             this.Name = "NumberGenerator";
             this.Text = "NumberGenerator";
+            this.Load += new System.EventHandler(this.NumberGenerator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

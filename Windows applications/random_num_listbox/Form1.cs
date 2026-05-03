@@ -45,6 +45,10 @@ namespace random_num_listbox
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Person.name = textBox1.Text;
+            Person.dob = dateTimePicker1.Value;
+            Person.password = textBox2.Text;
+
             NumberGenerator ng = new NumberGenerator();
             ng.ShowDialog();
         }

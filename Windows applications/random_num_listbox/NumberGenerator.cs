@@ -17,6 +17,7 @@ namespace random_num_listbox
             InitializeComponent();
         }
 
+
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -48,6 +49,11 @@ namespace random_num_listbox
         {
             Nums.Sort();
             MessageBox.Show("Sorted!");
+        }
+
+        private void NumberGenerator_Load(object sender, EventArgs e)
+        {
+            label1.Text = $"Welcome, {Person.name}!";
         }
     }
 }

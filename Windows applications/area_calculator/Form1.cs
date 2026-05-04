@@ -43,6 +43,12 @@ namespace area_calculator
             r.A = Convert.ToInt32(textBox1.Text);
             r.B = Convert.ToInt32(textBox2.Text);
             textBox3.Text = r.Area().ToString();
+
+            Graphics gr = textBox4.CreateGraphics();
+            Pen p = new Pen(Color.Magenta, 4);
+            gr.DrawRectangle(p, 20, 20, 150, 75); // x, y, width, height
+            SolidBrush sb = new SolidBrush(Color.Yellow);
+            gr.FillRectangle(sb, 21, 21, 148, 73);
         }
     }
 }

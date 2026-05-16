@@ -18,7 +18,7 @@ namespace DepositManager
 
        public struct SecurityPin
         {
-            public int Pincode;
+            public int PinCode;
             
             public SecurityPin(int InitPin)
             {
